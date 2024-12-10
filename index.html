@@ -41,6 +41,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="responsive.css">
 
     <!-- additional style for description of swapping image -->
     <style>
@@ -178,19 +179,22 @@
         <div id="ytWidget" style="display: none;"></div>
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-0 py-0 py-lg-0">
+            <div style="display: flex; align-items: center ;">
             <a class="ms-5" href="index.html">
-            <img itemprop="logo" src="scp.png" alt="" class="lazyautosizes lazyloaded" sizes="1px">
-        </a>
+                <img itemprop="logo" src="scp.png" alt="" class="lazyautosizes lazyloaded smallDevice" sizes="1px">
+            </a>
             <a href="index.html" class="navbar-brand p-0">
-                <h4 class="m-0 text-uppercase text-primary "><a class="logo-img" style="text-decoration: none;" href="/" title="Logo">
+                <h4 class="m-0 text-uppercase text-primary scpSmallDevice"><a class="logo-img" style="text-decoration: none;" href="/"
+                        title="Logo">
                         सांस्कृतिक चेतना परिषद, पंतनगर </h4>
             </a>
             <!-- gbpuat icon start -->
             <a href="index.html" class="navbar-brand p-0" ,>
                 <h4 class="m-0 text-uppercase text-primary "><a class="logo-img" href="https://www.gbpuat.ac.in/"
-                        target="_blank" title="Logo" >
-                        <img itemprop="logo" src="Logo1+.png" alt=""  class="lazyautosizes lazyloaded" sizes="40px"></h4>
+                        target="_blank" title="Logo">
+                        <img itemprop="logo" src="Logo1+.png" alt="" class="lazyautosizes lazyloaded smallDevice" sizes="40px"></h4>
             </a>
+        </div>
             <!-- gbpuat icon End -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -198,6 +202,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0 pe-0 ">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="team.html" class="nav-item nav-link ">Team</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="https://blogs.scpps.co.in/" target="_blank" class="nav-item nav-link">Blogs</a>
                     <div class="nav-item dropdown">
@@ -222,7 +227,7 @@
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex align-items-center ps-4">
-
+    
                 </div>
             </div>
         </nav>
@@ -308,7 +313,7 @@
                         <div class="row">
                             <div class="column left" style="background-color:rgb(255, 255, 245); overflow: scroll;">
                                 <h2>ABOUT</h2>
-                                <p allign="justify" >Sanskritik Chetna Parishad is a University Level Professional Body,
+                                <p allign="justify">Sanskritik Chetna Parishad is a University Level Professional Body,
                                     owned and guided by Dean Student Welfare, GBPUAT, Pantnagar. It is a decades-old
                                     brilliant organization which has been working for skill-development of students at
                                     the university level, for organizing University and national level conferences and
@@ -317,15 +322,25 @@
                                 <button name="more" value="View More" class="button"
                                     style="float:right;background-color:aliceblue;" onclick="aboutFunction()"><a
                                         href="about.html" style="color:black;">Show More</a></button>
-                          
-       
+
+
                             </div>
 
                             <div class="column right" style="background-color:rgb(169, 219, 245);">
                                 <h2>NOTICE</h2>
-                                <p style="display: inline-block;font-weight: bold;">SCP Inductions results for 2024-25 batch -></p><a style="color: rgb(214, 149, 95);"
-                                    href="./document-8.pdf"> click here</a>
+                                <li style="margin-left: 20px; margin-bottom: 10px;">
+                                    <span style="font-weight: bolder;">Induction Notice For 2024-25 Batch
+                                        -></span><a style="color: rgb(245, 124, 25);" href="./SCP Induction notice.pdf">
+                                        click
+                                        here</a>
+                                </li>
 
+                                <li style="margin-left: 20px;">
+                                    <span style="font-weight: bolder;">Induction Results For 2024-25 Batch
+                                        -></span><a style="color: rgb(245, 124, 25);" href="./SCP INDUCTION RESULTS , 2024-25.pdf">
+                                        click
+                                        here</a> 
+                                </li>
                             </div>
                         </div>
                     </div>
@@ -465,8 +480,8 @@
                             <div class="d-flex justify-content-between border-top border-secondary p-4">
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle me-2"
-                                        src="https://2.gravatar.com/avatar/dc9e02aea18c7600ff3e159c6431b0f2"
-                                        width="30" height="30" alt="">
+                                        src="https://2.gravatar.com/avatar/dc9e02aea18c7600ff3e159c6431b0f2" width="30"
+                                        height="30" alt="">
                                     <small class="text-uppercase">Aishna Srivastava</small>
                                 </div>
                                 <!--div class="d-flex align-items-center">
@@ -546,7 +561,8 @@
                                 <div class="team-social">
                                     <!--a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a-->
-                                    <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="https://www.linkedin.com/in/priyanshu-jha-46618a297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2"
+                                        href="https://www.linkedin.com/in/priyanshu-jha-46618a297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
                                             class="fab fa-linkedin-in"></i></a>
                                 </div>
                                 <div class="mt-auto mb-3">
@@ -578,13 +594,22 @@
                     </div>
                 </div>
             </div>
+            <div style="width: 100%;display: flex;justify-content:center;">
+                <a href="./team.html">
+                    <div class="team-item">
+                        <h4>2024-25 Society members<img style="height:20px ;"
+                                src="./img/arrow-up-right-svgrepo-com.svg"></h4>
+                    </div>
+                </a>
+            </div>
         </div>
+
         <!-- Team End -->
         <!-- Contact Start -->
         <div class="container-fluid py-5">
             <div class="row justify-content-center position-relative" style=" z-index: 1;">
-                <div class="col-lg-8">
-                    <div class="bg-primary p-5 m-5 mb-0">
+                <div class="col-lg-4">
+                    <div class="bg-primary p-3 mb-0">
                         <h3 class="mb-4">Leave a comment</h3>
                         <form>
                             <div class="row g-3">
@@ -601,7 +626,7 @@
                                         style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="5"
+                                    <textarea class="form-control bg-light border-0" rows="3"
                                         placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-12">
@@ -621,6 +646,7 @@
 
 
     <!-- Footer Start -->
+
     <div class="container-fluid bg-dark bg-footer text-light py-5">
         <div class="container py-5">
             <div class="row g-5">
@@ -630,7 +656,10 @@
                     <p class="mb-4"></p>
                     <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Pantnagar</p>
                     <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>scppsgbpuat@gmail.com</p>
-                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91 7070022455</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91
+                        8077804808</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91
+                        9456751652</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-primary">Quick Links</h4>
@@ -640,7 +669,7 @@
                         <a class="text-light mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
                         <a class="text-light mb-2" href="https://scppsgbpuat.wordpress.com" target="_blank"><i
                                 class="fa fa-angle-right me-2"></i>Latest Blog</a>
-                        <p class="mb-4">Created and Managed by: Priyanshu Kumar Jha and Rachit Pandey </p>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -661,11 +690,18 @@
                             href="https://www.youtube.com/@sanskritikchetnaparishad2110" target="_blank"><i
                                 class="fab fa-youtube"></i></a>
                     </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <p class="text-primary" style="margin-bottom: 0px;">Created by: </p>
+                    <span style="font-weight: bold; color: white;">Priyanshu Kumar Jha</span>
+                    <p class="text-primary" style="margin-bottom: 0px; margin-top: 10px;">Managed by:</p>
+                    <span style="font-weight: bold; color: white;">Rachit Pandey and Harsh Kumar</span>
+
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Footer End -->
 
 
@@ -680,7 +716,7 @@
         <div onMouseOver="document.getElementById('bottom_marquee').stop();"
             onMouseOut="document.getElementById('bottom_marquee').start();">
 
-            <b> SCP induction results for 2024-25 batch are out. Check them out in notice section. </b> &nbsp;
+            <b> SCP induction results for 2024-25 batch are out. Check them in notice section. </b> &nbsp;
 
 
         </div>

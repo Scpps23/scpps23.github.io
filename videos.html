@@ -30,6 +30,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
 
     <!--gallery style-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,50 +103,58 @@
       <div id="ytWidget" style="display: none;"></div>
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-0 py-0 py-lg-0">
-      <a href="index.html" class="navbar-brand p-0">
-          <h4 class="m-0 text-uppercase text-primary"><a class="logo-img" href="/" title="Logo">
-          <img itemprop="logo"  src="scp.png" alt="" class="lazyautosizes lazyloaded"  sizes="1px"> <b>सांस्कृतिक चेतना परिषद, पंतनगर</b> </h4>
-      </a>
-      <!-- gbpuat icon start -->
-      <a href="index.html" class="navbar-brand p-0",>
-              <h4 class="m-0 text-uppercase text-primary "><a class="logo-img" href="https://www.gbpuat.ac.in/"target="_blank" title="Logo">
-              <img itemprop="logo"  src="Logo1+.png" alt="" class="lazyautosizes lazyloaded"  sizes="40px"></h4>
-      </a>
-      <!-- gbpuat icon End -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ms-auto py-0 pe-0 ">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="about.html" class="nav-item nav-link">About</a>
-              <a href="https://blogs.scpps.co.in/" target="_blank" class="nav-item nav-link">Blogs</a>
-              <div class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
-                  <div class="dropdown-menu m-0">
-                      <a href="images.html" class="dropdown-item">Images</a>
-                      <a href="videos.html" class="dropdown-item">Videos</a>
-                  </div>
-              </div>
-              <!--div class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><img src="img/lang/language-translator.png"alt="Lang"></a>
-                
-                  <div class="dropdown-menu m-0"><div class="lang__list" data-lang-list>
-                      <a class="lang__link lang__link_sub dropdown-item" data-ya-lang="en">
-                          <img class="lang__img" src="img/lang/lang__en.png" alt="en">
-                      </a>
-                      <a class="lang__link lang__link_sub dropdown-item" data-ya-lang="hi">
-                          <img class="lang__img" src="img/lang/lang__hi.png" alt="hi">
-                      </a>
-                  </div></div>
-              </div-->
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
-          </div>
-          <div class="d-none d-lg-flex align-items-center ps-4">
-                  
-          </div>
-      </div>
-  </nav>
+    <div style="display: flex; align-items: center ;">
+    <a class="ms-5" href="index.html">
+        <img itemprop="logo" src="scp.png" alt="" class="lazyautosizes lazyloaded smallDevice" sizes="1px">
+    </a>
+    <a href="index.html" class="navbar-brand p-0">
+        <h4 class="m-0 text-uppercase text-primary scpSmallDevice"><a class="logo-img" style="text-decoration: none; color: #FFE468;" href="/"
+                title="Logo">
+                सांस्कृतिक चेतना परिषद, पंतनगर </h4>
+    </a>
+    <!-- gbpuat icon start -->
+    <a href="index.html" class="navbar-brand p-0" ,>
+        <h4 class="m-0 text-uppercase text-primary "><a class="logo-img" href="https://www.gbpuat.ac.in/"
+                target="_blank" title="Logo">
+                <img itemprop="logo" src="Logo1+.png" alt="" class="lazyautosizes lazyloaded smallDevice" sizes="40px"></h4>
+    </a>
+</div>
+    <!-- gbpuat icon End -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0 pe-0 ">
+            <a href="index.html" class="nav-item nav-link ">Home</a>
+            <a href="team.html" class="nav-item nav-link ">Team</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="https://blogs.scpps.co.in/" target="_blank" class="nav-item nav-link">Blogs</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
+                <div class="dropdown-menu m-0">
+                    <a href="images.html" class="dropdown-item">Images</a>
+                    <a href="videos.html" class="dropdown-item active">Videos</a>
+                </div>
+            </div>
+            <!--div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><img src="img/lang/language-translator.png"alt="Lang"></a>
+          
+            <div class="dropdown-menu m-0"><div class="lang__list" data-lang-list>
+                <a class="lang__link lang__link_sub dropdown-item" data-ya-lang="en">
+                    <img class="lang__img" src="img/lang/lang__en.png" alt="en">
+                </a>
+                <a class="lang__link lang__link_sub dropdown-item" data-ya-lang="hi">
+                    <img class="lang__img" src="img/lang/lang__hi.png" alt="hi">
+                </a>
+            </div></div>
+        </div-->
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <div class="d-none d-lg-flex align-items-center ps-4">
+
+        </div>
+    </div>
+</nav>
   
 
   <!-- Navbar End -->
@@ -275,7 +284,10 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                   <p class="mb-4"></p>
                   <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Pantnagar</p>
                   <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>scppsgbpuat@gmail.com</p>
-                  <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91 7070022455</p>
+                  <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91 
+                      8077804808</p>
+                      <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91 
+                          9456751652</p>
               </div>
               <div class="col-lg-3 col-md-6">
                   <h4 class="text-primary">Quick Links</h4>
@@ -283,8 +295,9 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                   <div class="d-flex flex-column justify-content-start">
                       <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
                       <a class="text-light mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                      <a class="text-light mb-2" href="https://scppsgbpuat.wordpress.com" target="_blank"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
-                      <p class="mb-4">Created and Managed by: Priyanshu Kumar Jha and Rachit Pandey </p>
+                      <a class="text-light mb-2" href="https://scppsgbpuat.wordpress.com" target="_blank"><i
+                              class="fa fa-angle-right me-2"></i>Latest Blog</a>
+
                   </div>
               </div>
               <div class="col-lg-3 col-md-6">
@@ -292,15 +305,32 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                   <hr class="w-25 text-secondary mb-4" style="opacity: 1;">
                   <div class="d-flex">
                       <!--a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a-->
-                      <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://hi-in.facebook.com/people/Sanskritik-Chetna-Parishad/100069612294268/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                      <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://in.linkedin.com/in/sanskritik-chetna-parishad-61890a219?"target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                      <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.instagram.com/scpgbpuat/?hl=en"target="_blank"><i class="fab fa-instagram"></i></a>
-                      <a class="btn btn-lg btn-primary btn-lg-square rounded-circle"href="https://www.youtube.com/@sanskritikchetnaparishad2110"target="_blank"><i class="fab fa-youtube"></i></a>
+                      <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                          href="https://hi-in.facebook.com/people/Sanskritik-Chetna-Parishad/100069612294268/"
+                          target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                          href="https://in.linkedin.com/in/sanskritik-chetna-parishad-61890a219?" target="_blank"><i
+                              class="fab fa-linkedin-in"></i></a>
+                      <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                          href="https://www.instagram.com/scpgbpuat/?hl=en" target="_blank"><i
+                              class="fab fa-instagram"></i></a>
+                      <a class="btn btn-lg btn-primary btn-lg-square rounded-circle"
+                          href="https://www.youtube.com/@sanskritikchetnaparishad2110" target="_blank"><i
+                              class="fab fa-youtube"></i></a>
                   </div>
+
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <p class="text-primary" style="margin-bottom: 0px;">Created by: </p>
+                  <span style="font-weight: bold; color: white;">Priyanshu Kumar Jha</span>
+                  <p class="text-primary" style="margin-bottom: 0px; margin-top: 10px;">Managed by:</p>
+                  <span style="font-weight: bold; color: white;">Rachit Pandey and Harsh Kumar</span>
+
               </div>
           </div>
       </div>
   </div>
+
   
   <!-- Footer End -->
 

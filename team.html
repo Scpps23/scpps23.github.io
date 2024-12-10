@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PAINTER - Painting Company Website Template</title>
+    <title>SCP</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -13,7 +13,9 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
@@ -27,6 +29,110 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./team.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .profile-card {
+            height: 220px;
+            width: 150px;
+            background-color: white;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .profile-card img {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .info-section {
+            width: 130px;
+            height: 60px;
+            background-color: #FFE468;
+            position: absolute;
+            top: 140px;
+            left: 10px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .info-section h1 {
+            font-size: 16px;
+            margin: 0;
+            color: #333;
+        }
+
+        .info-section span {
+            font-size: 10px;
+            text-transform: uppercase;
+            color: #555;
+        }
+
+        .social-icons {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+
+        .social-icons a img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .committee-container {
+            height: 150px;
+            width: 96%;
+            background-color: white;
+            margin-left: 10px;
+            border-radius: 30px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        .committee-container-inner {
+            width: 200px;
+            height: 100%;
+            background-color: #FFE468;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-top: 35px
+        }
+
+
+
+        .members {
+            display: flex;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,25 +142,37 @@
             <div class="row">
                 <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-dark py-2 pe-3 border-end border-white" href=""><i class="bi bi-telephone text-secondary me-2"></i>+012 345 6789</a>
-                        <a class="text-dark py-2 px-3" href=""><i class="bi bi-envelope text-secondary me-2"></i>info@example.com</a>
+                        <!--a class="text-dark py-2 pe-3 border-end border-white" href=""><i class="bi bi-telephone text-secondary me-2"--></i><!--/a-->
+                        <a class="text-dark py-2 px-3" href=""><i
+                                class="bi bi-envelope text-secondary me-2"></i>scppsgbpuat@gmail.com</a>
+
+
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
+
+                        <!--a class="text-body py-2 px-3 border-end border-white" href="">
+                            <i class="lang__link lang__link_select" data-lang-active></i>
+                        </a-->
+                        <a class="text-body py-2 px-3 border-end border-white"
+                            href="https://hi-in.facebook.com/people/Sanskritik-Chetna-Parishad/100069612294268/"
+                            target="_blank">
                             <i class="fab fa-facebook-f text-secondary"></i>
                         </a>
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
+                        <!--a class="text-body py-2 px-3 border-end border-white" href="">
                             <i class="fab fa-twitter text-secondary"></i>
-                        </a>
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
+                        </a-->
+                        <a class="text-body py-2 px-3 border-end border-white"
+                            href="https://in.linkedin.com/in/sanskritik-chetna-parishad-61890a219?" target="_blank">
                             <i class="fab fa-linkedin-in text-secondary"></i>
                         </a>
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
+                        <a class="text-body py-2 px-3 border-end border-white"
+                            href="https://instagram.com/scpgbpuat?igshid=YmMyMTA2M2Y=" target="_blank">
                             <i class="fab fa-instagram text-secondary"></i>
                         </a>
-                        <a class="text-body py-2 ps-3" href="">
+                        <a class="text-body py-2 ps-3" href="https://youtube.com/@sanskritikchetnaparishad2110"
+                            target="_blank">
                             <i class="fab fa-youtube text-secondary"></i>
                         </a>
                     </div>
@@ -66,35 +184,56 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-paint-roller text-secondary me-3"></i>Painter</h1>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-0 py-0 py-lg-0">
+        <div style="display: flex; align-items: center ;">
+        <a class="ms-5" href="index.html">
+            <img itemprop="logo" src="scp.png" alt="" class="lazyautosizes lazyloaded smallDevice" sizes="1px">
         </a>
+        <a href="index.html" class="navbar-brand p-0">
+            <h4 class="m-0 text-uppercase text-primary scpSmallDevice"><a class="logo-img" style="text-decoration: none;" href="/"
+                    title="Logo">
+                    सांस्कृतिक चेतना परिषद, पंतनगर </h4>
+        </a>
+        <!-- gbpuat icon start -->
+        <a href="index.html" class="navbar-brand p-0" ,>
+            <h4 class="m-0 text-uppercase text-primary "><a class="logo-img" href="https://www.gbpuat.ac.in/"
+                    target="_blank" title="Logo">
+                    <img itemprop="logo" src="Logo1+.png" alt="" class="lazyautosizes lazyloaded smallDevice" sizes="40px"></h4>
+        </a>
+    </div>
+        <!-- gbpuat icon End -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0 pe-4 border-end border-5 border-primary">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+            <div class="navbar-nav ms-auto py-0 pe-0 ">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="team.html" class="nav-item nav-link active">Team</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="https://blogs.scpps.co.in/" target="_blank" class="nav-item nav-link">Blogs</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
                     <div class="dropdown-menu m-0">
-                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                        <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                        <a href="team.html" class="dropdown-item active">The Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="images.html" class="dropdown-item">Images</a>
+                        <a href="videos.html" class="dropdown-item">Videos</a>
                     </div>
                 </div>
+                <!--div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><img src="img/lang/language-translator.png"alt="Lang"></a>
+              
+                <div class="dropdown-menu m-0"><div class="lang__list" data-lang-list>
+                    <a class="lang__link lang__link_sub dropdown-item" data-ya-lang="en">
+                        <img class="lang__img" src="img/lang/lang__en.png" alt="en">
+                    </a>
+                    <a class="lang__link lang__link_sub dropdown-item" data-ya-lang="hi">
+                        <img class="lang__img" src="img/lang/lang__hi.png" alt="hi">
+                    </a>
+                </div></div>
+            </div-->
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <div class="d-none d-lg-flex align-items-center ps-4">
-                <i class="fa fa-2x fa-mobile-alt text-secondary me-3"></i>
-                <div>
-                    <h5 class="text-primary mb-1"><small>Call Now</small></h5>
-                    <h6 class="text-light m-0">+012 345 6789</h6>
-                </div>
+
             </div>
         </div>
     </nav>
@@ -102,14 +241,14 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5 bg-hero" style="margin-bottom: 90px;">
+    <div class="container-fluid bg-primary py-5 bg-hero" style="margin-bottom: 10px;">
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-1 text-dark">The Team</h1>
+                    <h1 class="display-1 text-dark">2024-25 Society members</h1>
                     <div class="pt-2">
-                        <a href="" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">Home</a>
-                        <a href="" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">The Team</a>
+                        <a href="./index.html" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">Home</a>
+                        <a href="./team.html" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">The Team</a>
                     </div>
                 </div>
             </div>
@@ -125,171 +264,280 @@
                 <h1 class="display-5">Dedicated Team Members</h1>
                 <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
             </div>
-            <div class="row g-3">
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
+
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="profile-card">
+                    <img src="./img/executiveBody/deepanshu.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Deepanshu Mukati</h1>
+                        <span>Joint Secretary</span>
                     </div>
+
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
+                <!-- Card 2 -->
+                <div class="profile-card">
+                    <img src="./img/executiveBody/aditya.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Aditya Singh</h1>
+                        <span>Media and Public representative</span>
                     </div>
+
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
+                <!-- Card 3 -->
+                <div class="profile-card">
+                    <img src="./img/executiveBody/ayushiAswal.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Ayushi Aswal</h1>
+                        <span>Chief activity coordinator 1</span>
                     </div>
+
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/niharika.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Niharika Dewari</h1>
+                        <span>Chief activity coordinator 2</span>
                     </div>
+
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/richa.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Richa Joshi</h1>
+                        <span>Chief activity coordinator 3</span>
                     </div>
+
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
 
 
-    <!-- Call To Action Start -->
-    <div class="container-fluid bg-primary bg-call-to-action py-5" style="margin-top: 90px;">
-        <div class="container py-5">
-            <div class="row g-0 justify-content-start">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-4">Do You Have Any Project?</h1>
-                    <p class="fs-4 fw-normal">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
-                    <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
+                <div class="profile-card">
+                    <img src="./img/executiveBody/aditiBhist.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Aditi Bisht</h1>
+                        <span>Chief Editor</span>
+                    </div>
+
                 </div>
+
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/nimishaBhatt.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Nimisha Bhatt</h1>
+                        <span>Literary committee secretary</span>
+                    </div>
+
+                </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/tarun.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Tarun Kumar</h1>
+                        <span>Technical committee secretary</span>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/astha.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Astha Ramola</h1>
+                        <span>logistics committee secretary</span>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/nehaPandey.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Neha Pandey</h1>
+                        <span>Cultural committee secretary</span>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/ayushiSubba.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Ayushi Subba</h1>
+                        <span>managerial committee secretary</span>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/sapna.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Sapna</h1>
+                        <span>Fine arts committee secretary</span>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/pragya.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Pragya Jain</h1>
+                        <span>vice president</span>
+                    </div>
+
+                </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/harshal.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Harshal Tiwari</h1>
+                        <span>deputy general secretary 1</span>
+                    </div>
+
+                </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/pooja.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Pooja joshi</h1>
+                        <span>deputy general secretary 2</span>
+                    </div>
+
+                </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/harshit.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Harshit Upreti</h1>
+                        <span>treasurer</span>
+                    </div>
+
+                </div>
+
+
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/devasish.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Devashish Nath</h1>
+                        <span>Activity Coordinator 1</span>
+                    </div>
+
+                </div>
+
+                <div class="profile-card">
+                    <img src="./img/executiveBody/ayushiJoshi.jpeg" alt="Profile Image">
+                    <div class="info-section">
+                        <h1>Ayushi Joshi</h1>
+                        <span>Activity Coordinator 2</span>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Add more cards as needed -->
             </div>
+            <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px;">
+
+                <a class="abc" href="./SCP INDUCTION RESULTS , 2024-25.pdf">
+                    <h1 style="color: black;" class="display-5">See Full Team <img style="height: 40px; "
+                            src="./img/arrow-up-right-svgrepo-com.svg"></h1>
+                </a>
+
+            </div>
+
+            <!-- TO be fixed later -->
+            <!-- <div class="committee-container">
+                <div class="committee-container-inner">
+                    <h1 class="display-1 text-dark" style="font-size: 30px; margin-left: 30px">Literary Committee</h1>
+
+                </div>
+                <div class="heads" style="width: 200px;">
+                    <span style="color: black;">Bhoomika Kandpal
+                        <br><span style="font-size: small; color: grey;">( Head )</span>
+                    </span>
+                    <br>
+                    <span style="color: black;">Harshit Durgapal <br><span style="font-size: small; color: grey;">( Head )</span></span>
+                </div>
+
+                <div class="heads">
+                    <div style="width: 33%">
+                        <span class="membersNames">Tamanna Joshi</span>
+                        <br><br>
+                        <span class="membersNames">Jiya Grover</span>
+                        <br><br>
+                        <span class="membersNames">Rishabh Joshi</span>
+                    </div>
+                    
+                    <div style="width: 33%;">
+                        <span class="membersNames">Shagun Bisht</span>
+                        <br><br>
+                        <span class="membersNames">Ananya Mishra</span>
+                        <br><br>
+                        <span class="membersNames">Surbhi Singh</span>
+                    </div>
+                    <br><br>
+                    <div style="width: 33%">
+                        <span class="membersNames">Kshitij Vats</span>
+                        <br><br>
+                        <span class="membersNames">Parthvi Singh</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="committee-container">
+                <div class="committee-container-inner">
+                    <h1 class="display-1 text-dark" style="font-size: 30px; margin-left: 30px">Technical Committee</h1>
+
+                </div>
+
+            </div>
+
+            <div class="committee-container">
+                <div class="committee-container-inner">
+                    <h1 class="display-1 text-dark" style="font-size: 30px; margin-left: 30px">Cultural Committee</h1>
+
+                </div>
+
+            </div>
+
+            <div class="committee-container">
+                <div class="committee-container-inner">
+                    <h1 class="display-1 text-dark" style="font-size: 30px; margin-left: 30px">managerial Committee</h1>
+
+                </div>
+
+            </div>
+
+            <div class="committee-container">
+                <div class="committee-container-inner">
+                    <h1 class="display-1 text-dark" style="font-size: 30px; margin-left: 30px">Logistics and finance
+                        Committee</h1>
+
+                </div>
+
+            </div>
+
+            <div class="committee-container">
+                <div class="committee-container-inner">
+                    <h1 class="display-1 text-dark" style="font-size: 30px; margin-left: 30px">Fine arts Committee</h1>
+
+                </div>
+
+            </div> -->
+
         </div>
+
+
     </div>
-    <!-- Call To Action Start -->
-    
+
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark bg-footer text-light py-5">
@@ -298,72 +546,62 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-primary">Get In Touch</h4>
                     <hr class="w-25 text-secondary mb-4" style="opacity: 1;">
-                    <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor</p>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
-                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary">Our Services</h4>
-                    <hr class="w-25 text-secondary mb-4" style="opacity: 1;">
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Regular Painting</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Wall Painting</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Floor Coating</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Graffiti Removal</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Mildew Removal</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Window Washing</a>
-                    </div>
+                    <p class="mb-4"></p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Pantnagar</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>scppsgbpuat@gmail.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91
+                        8077804808</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91
+                        9456751652</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-primary">Quick Links</h4>
                     <hr class="w-25 text-secondary mb-4" style="opacity: 1;">
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="https://scppsgbpuat.wordpress.com" target="_blank"><i
+                                class="fa fa-angle-right me-2"></i>Latest Blog</a>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary">Newsletter</h4>
+                    <h4 class="text-primary">Follow US</h4>
                     <hr class="w-25 text-secondary mb-4" style="opacity: 1;">
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email">
-                            <button class="btn btn-primary">Sign Up</button>
-                        </div>
-                    </form>
-                    <h6 class="text-primary mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                        <!--a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a-->
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                            href="https://hi-in.facebook.com/people/Sanskritik-Chetna-Parishad/100069612294268/"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                            href="https://in.linkedin.com/in/sanskritik-chetna-parishad-61890a219?" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                            href="https://www.instagram.com/scpgbpuat/?hl=en" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle"
+                            href="https://www.youtube.com/@sanskritikchetnaparishad2110" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
                     </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <p class="text-primary" style="margin-bottom: 0px;">Created by: </p>
+                    <span style="font-weight: bold; color: white;">Priyanshu Kumar Jha</span>
+                    <p class="text-primary" style="margin-bottom: 0px; margin-top: 10px;">Managed by:</p>
+                    <span style="font-weight: bold; color: white;">Rachit Pandey and Harsh Kumar</span>
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-primary text-dark py-4">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">Copyright &copy; <a class="text-dark fw-bold" href="#">Your Site Name</a>. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-dark fw-bold" href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Footer End -->
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
