@@ -1,0 +1,16 @@
+.magazine-iframe{
+    height: 600px;
+    width: 600px;
+    border: black;
+    border-width: 5px;
+    border-style: solid;
+
+}
+
+@media screen and (max-width: 768px) {
+    .magazine-iframe{
+        height: 600px;
+        width: 95vw;
+    }
+
+}
