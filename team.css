@@ -1,0 +1,31 @@
+.heads{
+    margin-left: 20px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.membersNames {
+    margin: 30px;
+
+
+}
+
+.abc:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .smallDevice{
+        height: 30px;
+        margin: 0px;
+    }
+
+    .scpSmallDevice{
+        font-size: 12px ;
+    }
+}

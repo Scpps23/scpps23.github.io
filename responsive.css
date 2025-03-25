@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    .smallDevice{
+        height: 30px;
+        margin: 0px;
+    }
+
+    .scpSmallDevice{
+        font-size: 12px ;
+    }
+}
