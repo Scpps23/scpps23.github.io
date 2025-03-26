@@ -7,4 +7,18 @@
     .scpSmallDevice{
         font-size: 12px ;
     }
+    #popup{
+        height: 80vh;
+        display: none;
+    }
+    /* #car-a3{
+        display: block;
+    }
+    #car-banner{
+        display: none;
+    } */
 }
+
+/* #car-a3{
+    display: none;
+} */

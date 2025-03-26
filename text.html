@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Horizontal layout for desktop */
+.slider {
+    flex-direction: row;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Vertical layout for mobile */
+@media (max-width: 768px) {
+    .slider {
+        flex-direction: column;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="./img/Banner .jpg" alt="Nature">
+            </div>
+            <div class="slide">
+                <img src="./img/img_upload.png" alt="City">
+            </div>
+            <div class="slide">
+                <img src="./img/Navarambh poster A3.jpg" alt="Animal">
+            </div>
+            <!-- <div class="slide">
+                <img src="https://source.unsplash.com/random/800x600?food" alt="Food">
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/random/800x600?tech" alt="Technology">
+            </div> -->
+        </div>
+        
+        <button class="slider-btn prev-btn">&lt;</button>
+        <button class="slider-btn next-btn">&gt;</button>
+        
+        <div class="slider-dots"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const dotsContainer = document.querySelector('.slider-dots');
+    
+    let currentIndex = 0;
+    let slideInterval;
+    const slideDuration = 3000; // 3 seconds
+    
+    // Create dots
+    slides.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+    
+    const dots = document.querySelectorAll('.dot');
+    
+    // Start auto slide
+    startSlideInterval();
+    
+    function startSlideInterval() {
+        slideInterval = setInterval(nextSlide, slideDuration);
+    }
+    
+    function resetSlideInterval() {
+        clearInterval(slideInterval);
+        startSlideInterval();
+    }
+    
+    function updateSlider() {
+        const isMobile = window.innerWidth <= 768;
+        
+        if (isMobile) {
+            // Vertical sliding for mobile
+            slider.style.transform = `translateY(-${currentIndex * 100}%)`;
+        } else {
+            // Horizontal sliding for desktop
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+        
+        // Update dots
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+    
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlider();
+    }
+    
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlider();
+    }
+    
+    function goToSlide(index) {
+        currentIndex = index;
+        updateSlider();
+        resetSlideInterval();
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetSlideInterval();
+    });
+    
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetSlideInterval();
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        updateSlider();
+    });
+    
+    // Pause on hover
+    slider.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+    });
+    
+    slider.addEventListener('mouseleave', () => {
+        startSlideInterval();
+    });
+    
+    // Touch events for mobile
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchEndX = 0;
+    let touchEndY = 0;
+    
+    slider.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+        clearInterval(slideInterval);
+    }, {passive: true});
+    
+    slider.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        touchEndY = e.changedTouches[0].screenY;
+        handleSwipe();
+        startSlideInterval();
+    }, {passive: true});
+    
+    function handleSwipe() {
+        const isMobile = window.innerWidth <= 768;
+        
+        if (isMobile) {
+            // Vertical swipe for mobile
+            if (touchEndY < touchStartY - 50) {
+                nextSlide(); // Swipe up
+            } else if (touchEndY > touchStartY + 50) {
+                prevSlide(); // Swipe down
+            }
+        } else {
+            // Horizontal swipe for desktop
+            if (touchEndX < touchStartX - 50) {
+                nextSlide(); // Swipe left
+            } else if (touchEndX > touchStartX + 50) {
+                prevSlide(); // Swipe right
+            }
+        }
+    }
+});
+    </script>
+</body>
+</html>
